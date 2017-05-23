@@ -1,12 +1,12 @@
 package me.phompang.fourquare_api
 
-import me.phompang.fourquare_api.exception.FoursquareApiException
 import okhttp3.mockwebserver.MockResponse
 import okhttp3.mockwebserver.MockWebServer
 import org.apache.commons.io.IOUtils
 import org.junit.Assert.assertEquals
 import org.junit.BeforeClass
 import org.junit.Test
+import retrofit2.HttpException
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.moshi.MoshiConverterFactory
@@ -35,13 +35,20 @@ class OAuthUnitTest {
     }
 
     @Test
-    @Throws(FoursquareApiException::class)
-    fun authenticateCode() {
+    fun testPassAuthenticateCode() {
         val json: String = IOUtils.toString(javaClass.classLoader.getResourceAsStream("data/auth/oauth.json"), Charset.defaultCharset())
         val response: MockResponse = MockResponse().setResponseCode(200).setBody(json)
         server.enqueue(response)
 
-        foursquareApi!!.authenticateCode("test")
+        foursquareApi!!.authenticateCode("code")
         assertEquals("FAKE_TOKEN", foursquareApi!!.accessToken)
+    }
+
+    @Test(expected = HttpException::class)
+    fun testFailAuthenticateCode() {
+        val response: MockResponse = MockResponse().setResponseCode(500)
+        server.enqueue(response)
+        foursquareApi!!.authenticateCode("code")
+        assertEquals("", foursquareApi!!.accessToken)
     }
 }

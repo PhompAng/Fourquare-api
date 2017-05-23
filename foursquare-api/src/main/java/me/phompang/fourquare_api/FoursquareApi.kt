@@ -2,7 +2,6 @@ package me.phompang.fourquare_api
 
 import io.reactivex.schedulers.Schedulers
 import me.phompang.fourquare_api.api.OAuth
-import me.phompang.fourquare_api.exception.FoursquareApiException
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.moshi.MoshiConverterFactory
@@ -30,7 +29,7 @@ class FoursquareApi(val clientId: String,
                     accessToken = it.access_token
                 }
                 .doOnError {
-                    throw FoursquareApiException(it)
+                    accessToken = ""
                 }
                 .blockingLast()
     }
