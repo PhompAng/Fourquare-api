@@ -152,7 +152,7 @@ class UserUnitTest {
                     t: Result<CompleteUser>? -> t!!.response.contact.twitter == "starbucks"
                 }
                 .assertValue {
-                    t: Result<CompleteUser>? -> t!!.response.type == "page"
+                    t: Result<CompleteUser>? -> t!!.response.type == "chain"
                 }
     }
 }
