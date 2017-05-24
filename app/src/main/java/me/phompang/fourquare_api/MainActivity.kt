@@ -5,6 +5,10 @@ import android.net.Uri
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
+import android.widget.Toast
+import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.rxkotlin.subscribeBy
+import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -19,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        auth.setOnClickListener({
+        auth.setOnClickListener {
             val intent: Intent = Intent(Intent.ACTION_VIEW)
             intent.data = Uri.parse(
                     "https://foursquare.com/oauth2/authenticate" +
@@ -27,7 +31,21 @@ class MainActivity : AppCompatActivity() {
                             "&response_type=code" +
                             "&redirect_uri=" + REDIRECT_URL)
             startActivity(intent)
-        })
+        }
+
+        user.setOnClickListener {
+            foursquareApi.getUser("self")
+                    .subscribeOn(Schedulers.newThread())
+                    .observeOn(AndroidSchedulers.mainThread())
+                    .subscribeBy(
+                            onNext = {
+                                println(it)
+                                code.text = it.toString()
+                            },
+                            onError = {
+                                Toast.makeText(baseContext, it.message, Toast.LENGTH_LONG).show()
+                            })
+        }
     }
 
     override fun onResume() {

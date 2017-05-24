@@ -1,0 +1,602 @@
+{
+  "meta": {
+    "code": 200,
+    "requestId": "59253a056a607127fdbf9642"
+  },
+  "notifications": [
+    {
+      "type": "notificationTray",
+      "item": {
+        "unreadCount": 4
+      }
+    }
+  ],
+  "response": {
+    "user": {
+      "id": "134748312",
+      "firstName": "balabelt",
+      "lastName": ".",
+      "gender": "female",
+      "relationship": "friend",
+      "canonicalUrl": "https://foursquare.com/balabeltmimi",
+      "photo": {
+        "prefix": "https://igx.4sqi.net/img/user/",
+        "suffix": "/134748312-FCOTGBKFUF50H1LC.jpg"
+      },
+      "friends": {
+        "count": 11,
+        "summary": "Friends with Mameaw 朱 and นท ฉ",
+        "groups": [
+          {
+            "type": "friends",
+            "name": "Mutual friends",
+            "count": 2,
+            "items": [
+              {
+                "id": "5340809",
+                "firstName": "Mameaw",
+                "lastName": "朱谢",
+                "gender": "female",
+                "relationship": "friend",
+                "photo": {
+                  "prefix": "https://igx.4sqi.net/img/user/",
+                  "suffix": "/5B1JDPFHLQKVT0I0.jpg"
+                },
+                "tips": {
+                  "count": 0
+                },
+                "lists": {
+                  "groups": [
+                    {
+                      "type": "created",
+                      "count": 5,
+                      "items": [
+                        
+                      ]
+                    }
+                  ]
+                },
+                "homeCity": "Bangkok, Thailand",
+                "bio": "",
+                "contact": {
+                  "email": "imeaw@live.com",
+                  "twitter": "mameaw14",
+                  "facebook": "100000251296888"
+                }
+              },
+              {
+                "id": "8420533",
+                "firstName": "นท",
+                "lastName": "ฉึกฉึก",
+                "gender": "male",
+                "relationship": "friend",
+                "photo": {
+                  "prefix": "https://igx.4sqi.net/img/user/",
+                  "suffix": "/24QDYLU5231SVGBZ.png"
+                },
+                "tips": {
+                  "count": 0
+                },
+                "lists": {
+                  "groups": [
+                    {
+                      "type": "created",
+                      "count": 2,
+                      "items": [
+                        
+                      ]
+                    }
+                  ]
+                },
+                "homeCity": "Bangkok, Thailand",
+                "bio": "",
+                "contact": {
+                  "email": "loli-moe@hotmail.com",
+                  "twitter": "nothakuv2",
+                  "facebook": "100000112510129"
+                }
+              }
+            ]
+          },
+          {
+            "type": "others",
+            "name": "Other friends",
+            "count": 9,
+            "items": [
+              {
+                "id": "122908333",
+                "firstName": "Mai",
+                "lastName": "P.",
+                "gender": "female",
+                "photo": {
+                  "prefix": "https://igx.4sqi.net/img/user/",
+                  "suffix": "/122908333-SIIVUFOKF2ILBN5Y.jpg"
+                },
+                "tips": {
+                  "count": 0
+                },
+                "lists": {
+                  "groups": [
+                    {
+                      "type": "created",
+                      "count": 2,
+                      "items": [
+                        
+                      ]
+                    }
+                  ]
+                },
+                "homeCity": "Bangkok",
+                "bio": "",
+                "contact": {
+                  "twitter": "maityppppp"
+                }
+              },
+              {
+                "id": "1709482",
+                "firstName": "Pichai",
+                "lastName": "Sivawat",
+                "gender": "male",
+                "relationship": "self",
+                "photo": {
+                  "prefix": "https://igx.4sqi.net/img/user/",
+                  "suffix": "/HH0ESYINZLKDMFTD.jpg"
+                },
+                "tips": {
+                  "count": 12
+                },
+                "lists": {
+                  "groups": [
+                    {
+                      "type": "created",
+                      "count": 4,
+                      "items": [
+                        
+                      ]
+                    }
+                  ]
+                },
+                "homeCity": "Chon Buri, Thailand",
+                "bio": "14 years guy, Linux, Ubuntu, Fedora, Apple Fan, Noob, Power User, Nerd, Android, Galaxy Nexus owner, NLC, Glassesclub, Wahkor, Heyhawahkor",
+                "contact": {
+                  "phone": "0861455926",
+                  "verifiedPhone": "false",
+                  "email": "tingtong003tomy@gmail.com",
+                  "twitter": "phompang",
+                  "facebook": "100000067460186"
+                }
+              },
+              {
+                "id": "178566172",
+                "firstName": "T0EI.",
+                "gender": "male",
+                "photo": {
+                  "prefix": "https://igx.4sqi.net/img/user/",
+                  "suffix": "/178566172-KGG4HBRVMBMXNAPM.jpg"
+                },
+                "tips": {
+                  "count": 0
+                },
+                "lists": {
+                  "groups": [
+                    {
+                      "type": "created",
+                      "count": 2,
+                      "items": [
+                        
+                      ]
+                    }
+                  ]
+                },
+                "homeCity": "",
+                "bio": "Contact me on; \n— Snap/Pinterest/Ask.fm 🍃\nUsername : unkniemx \n— Facebook : Toei Niemc 🚀",
+                "contact": {
+                  "twitter": "unkniemx",
+                  "facebook": "155733408156550"
+                }
+              },
+              {
+                "id": "144382078",
+                "firstName": "Sand",
+                "lastName": "K.",
+                "gender": "none",
+                "photo": {
+                  "prefix": "https://igx.4sqi.net/img/user/",
+                  "suffix": "/144382078_T7SbTjMA_DtRDEHsXVC4PH-qGKc0usYLxiKWD0beShbmApWosWz26igwpOAWdBraicq-nUyod.jpg"
+                },
+                "tips": {
+                  "count": 0
+                },
+                "lists": {
+                  "groups": [
+                    {
+                      "type": "created",
+                      "count": 2,
+                      "items": [
+                        
+                      ]
+                    }
+                  ]
+                },
+                "homeCity": "Bangkok, Bangkok",
+                "bio": "",
+                "contact": {
+                  "twitter": "sddckk",
+                  "facebook": "797724480281386"
+                }
+              },
+              {
+                "id": "7994810",
+                "firstName": "Naphat",
+                "lastName": "K.",
+                "gender": "female",
+                "photo": {
+                  "prefix": "https://igx.4sqi.net/img/user/",
+                  "suffix": "/7994810-3SLWM2GWEW3TU1OK.jpg"
+                },
+                "tips": {
+                  "count": 0
+                },
+                "lists": {
+                  "groups": [
+                    {
+                      "type": "created",
+                      "count": 2,
+                      "items": [
+                        
+                      ]
+                    }
+                  ]
+                },
+                "homeCity": "Bangkok, Thailand",
+                "bio": "",
+                "contact": {
+                  
+                }
+              },
+              {
+                "id": "130884406",
+                "firstName": "««Mr.Bank™»",
+                "lastName": "!!!",
+                "gender": "male",
+                "photo": {
+                  "prefix": "https://igx.4sqi.net/img/user/",
+                  "suffix": "/130884406-DBSHASXRYTULUSTL.jpg"
+                },
+                "tips": {
+                  "count": 0
+                },
+                "lists": {
+                  "groups": [
+                    {
+                      "type": "created",
+                      "count": 2,
+                      "items": [
+                        
+                      ]
+                    }
+                  ]
+                },
+                "homeCity": "Bang Bua Thong, 38",
+                "bio": "",
+                "contact": {
+                  "twitter": "totorio76",
+                  "facebook": "825376520865886"
+                }
+              },
+              {
+                "id": "78267373",
+                "firstName": "Bestzkub",
+                "lastName": "Best",
+                "gender": "male",
+                "photo": {
+                  "prefix": "https://igx.4sqi.net/img/user/",
+                  "suffix": "/78267373-BXYEA2W41QADBNTZ.jpg"
+                },
+                "tips": {
+                  "count": 0
+                },
+                "lists": {
+                  "groups": [
+                    {
+                      "type": "created",
+                      "count": 2,
+                      "items": [
+                        
+                      ]
+                    }
+                  ]
+                },
+                "homeCity": "Bangkok, Bangkok",
+                "bio": "",
+                "contact": {
+                  "twitter": "bestochi",
+                  "facebook": "1135082896507356"
+                }
+              },
+              {
+                "id": "26145412",
+                "firstName": "nonnonn.",
+                "gender": "female",
+                "photo": {
+                  "prefix": "https://igx.4sqi.net/img/user/",
+                  "suffix": "/26145412-JUSBNR4NTGN5VDN3.jpg"
+                },
+                "tips": {
+                  "count": 0
+                },
+                "lists": {
+                  "groups": [
+                    {
+                      "type": "created",
+                      "count": 2,
+                      "items": [
+                        
+                      ]
+                    }
+                  ]
+                },
+                "homeCity": "Bangkok ,Thailand",
+                "bio": "",
+                "contact": {
+                  "twitter": "inonpnk",
+                  "facebook": "100001895673290"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "tips": {
+        "count": 0
+      },
+      "homeCity": "Bangkok, Bangkok",
+      "bio": "-BN-",
+      "contact": {
+        "twitter": "balabeltmimi",
+        "facebook": "971459419583270"
+      },
+      "photos": {
+        "count": 1,
+        "items": [
+          {
+            "id": "586f531e7d0f6d6264f05197",
+            "createdAt": 1483690782,
+            "source": {
+              "name": "Swarm for Android",
+              "url": "https://www.swarmapp.com"
+            },
+            "prefix": "https://igx.4sqi.net/img/general/",
+            "suffix": "/134748312_94L9V7OmJmKvTui8GBb1jadv7v8X4XvOGZ1MUJQ7wqg.jpg",
+            "width": 2688,
+            "height": 1520,
+            "visibility": "public",
+            "venue": {
+              "id": "567e30c7498e84036d0696a8",
+              "name": "BonChon Chicken (บอนชอน ชิคเก้น)",
+              "contact": {
+                "facebook": "163626757003249",
+                "facebookUsername": "bonchonthailand",
+                "facebookName": "BonChon Chicken Thailand"
+              },
+              "location": {
+                "address": "CentralPlaza Pinklao",
+                "crossStreet": "5th Fl.",
+                "lat": 13.778012362416694,
+                "lng": 100.4761046505144,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 13.778012362416694,
+                    "lng": 100.4761046505144
+                  }
+                ],
+                "cc": "TH",
+                "city": "Bangkok Noi",
+                "state": "Bangkok",
+                "country": "Thailand",
+                "formattedAddress": [
+                  "CentralPlaza Pinklao (5th Fl.)",
+                  "Bangkok Noi",
+                  "Bangkok"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d14c941735",
+                  "name": "Wings Joint",
+                  "pluralName": "Wings Joints",
+                  "shortName": "Wings",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/wings_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "verified": false,
+              "stats": {
+                "checkinsCount": 4431,
+                "usersCount": 2598,
+                "tipCount": 2
+              },
+              "url": "http://www.bonchonthailand.com",
+              "like": false,
+              "allowMenuUrlEdit": true,
+              "beenHere": {
+                "lastCheckinExpiredAt": 0
+              }
+            },
+            "checkin": {
+              "id": "586f52e9326c5a1f92fe8121",
+              "createdAt": 1483690729,
+              "type": "checkin",
+              "entities": [
+                
+              ],
+              "shout": "กินเสร็จละค่อยเช็คอิน",
+              "timeZoneOffset": 420
+            }
+          }
+        ]
+      },
+      "checkinPings": "nearby",
+      "pings": true,
+      "type": "user",
+      "mayorships": {
+        "count": 0,
+        "items": [
+          
+        ]
+      },
+      "checkins": {
+        "count": 736,
+        "items": [
+          {
+            "id": "5922ae44a9fe125be0ea3673",
+            "createdAt": 1495445060,
+            "type": "checkin",
+            "timeZoneOffset": 420,
+            "venue": {
+              "id": "560e39e9498e106b51b190d8",
+              "name": "Snow Time",
+              "contact": {
+                
+              },
+              "location": {
+                "address": "Kasetsart University",
+                "crossStreet": "Chuchat Kumphu",
+                "lat": 13.844792868230037,
+                "lng": 100.57027803625981,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 13.844792868230037,
+                    "lng": 100.57027803625981
+                  }
+                ],
+                "postalCode": "10900",
+                "cc": "TH",
+                "neighborhood": "Chatuchak",
+                "city": "Chatuchak",
+                "state": "Bangkok",
+                "country": "Thailand",
+                "formattedAddress": [
+                  "Kasetsart University (Chuchat Kumphu)",
+                  "Chatuchak",
+                  "Bangkok 10900"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "512e7cae91d4cbb4e5efe0af",
+                  "name": "Frozen Yogurt Shop",
+                  "pluralName": "Frozen Yogurt Shops",
+                  "shortName": "Yogurt",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/frozenyogurt_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "verified": false,
+              "stats": {
+                "checkinsCount": 655,
+                "usersCount": 348,
+                "tipCount": 0
+              },
+              "like": false,
+              "allowMenuUrlEdit": true,
+              "beenHere": {
+                "lastCheckinExpiredAt": 0
+              }
+            },
+            "likes": {
+              "count": 0,
+              "groups": [
+                
+              ]
+            },
+            "like": false,
+            "isMayor": false,
+            "photos": {
+              "count": 0,
+              "items": [
+                
+              ]
+            },
+            "posts": {
+              "count": 0,
+              "textCount": 0
+            },
+            "comments": {
+              "count": 0
+            },
+            "source": {
+              "name": "Swarm for Android",
+              "url": "https://www.swarmapp.com"
+            }
+          }
+        ]
+      },
+      "lists": {
+        "count": 2,
+        "groups": [
+          {
+            "type": "created",
+            "count": 0,
+            "items": [
+              
+            ]
+          },
+          {
+            "type": "followed",
+            "count": 0,
+            "items": [
+              
+            ]
+          },
+          {
+            "type": "yours",
+            "count": 2,
+            "items": [
+              {
+                "id": "134748312/todos",
+                "name": "balabelt's Saved Places",
+                "description": "",
+                "type": "todos",
+                "editable": false,
+                "public": true,
+                "collaborative": false,
+                "url": "/balabeltmimi/list/todos",
+                "canonicalUrl": "https://foursquare.com/balabeltmimi/list/todos",
+                "listItems": {
+                  "count": 0
+                }
+              },
+              {
+                "id": "134748312/venuelikes",
+                "name": "balabelt’s Liked Places",
+                "description": "",
+                "type": "likes",
+                "editable": false,
+                "public": true,
+                "collaborative": false,
+                "url": "/balabeltmimi/list/venuelikes",
+                "canonicalUrl": "https://foursquare.com/balabeltmimi/list/venuelikes",
+                "listItems": {
+                  "count": 0
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "blockedStatus": "none",
+      "lenses": [
+        
+      ]
+    }
+  }
+}

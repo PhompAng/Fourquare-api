@@ -1,0 +1,386 @@
+{
+  "meta": {
+    "code": 200,
+    "requestId": "5925aabf6a607128003b495a"
+  },
+  "notifications": [
+    {
+      "type": "notificationTray",
+      "item": {
+        "unreadCount": 4
+      }
+    }
+  ],
+  "response": {
+    "user": {
+      "id": "203469",
+      "firstName": "ZAGAT",
+      "gender": "none",
+      "canonicalUrl": "https://foursquare.com/zagat",
+      "photo": {
+        "prefix": "https://igx.4sqi.net/img/user/",
+        "suffix": "/HJPRUD2NFJVZKZ01.png"
+      },
+      "friends": {
+        "count": 0,
+        "groups": [
+          {
+            "type": "friends",
+            "name": "Mutual friends",
+            "count": 0,
+            "items": [
+              
+            ]
+          },
+          {
+            "type": "others",
+            "name": "Other friends",
+            "count": 0,
+            "items": [
+              
+            ]
+          }
+        ]
+      },
+      "type": "page",
+      "tips": {
+        "count": 96
+      },
+      "homeCity": "New York, NY",
+      "bio": "We're excited to bring the enthusiastic Foursquare community together with ZAGAT's dining expertise. Now Foursquare users can benefit from official ZAGAT tips.",
+      "contact": {
+        "twitter": "zagat",
+        "facebook": "6209532642"
+      },
+      "photos": {
+        "count": 11,
+        "items": [
+          {
+            "id": "50a2cb0c16484923d7aa1600",
+            "createdAt": 1352846092,
+            "source": {
+              "name": "Foursquare Web",
+              "url": "https://foursquare.com"
+            },
+            "prefix": "https://igx.4sqi.net/img/general/",
+            "suffix": "/203469_ADfzJ05vCRDWlKE0Ny12fKB8aVzpECUJK-lZGr5apkM.jpg",
+            "width": 1944,
+            "height": 2592,
+            "visibility": "public",
+            "venue": {
+              "id": "4a6e1954f964a520e6d31fe3",
+              "name": "Boston Public Library",
+              "contact": {
+                "phone": "+16175365400",
+                "formattedPhone": "+1 617-536-5400",
+                "twitter": "bplboston"
+              },
+              "location": {
+                "address": "700 Boylston St",
+                "crossStreet": "at Dartmouth St",
+                "lat": 42.34961250720164,
+                "lng": -71.07805377190529,
+                "postalCode": "02116",
+                "cc": "US",
+                "city": "Boston",
+                "state": "MA",
+                "country": "United States",
+                "formattedAddress": [
+                  "700 Boylston St (at Dartmouth St)",
+                  "Boston, MA 02116",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d12f941735",
+                  "name": "Library",
+                  "pluralName": "Libraries",
+                  "shortName": "Library",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/building/library_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "verified": true,
+              "stats": {
+                "checkinsCount": 27742,
+                "usersCount": 15066,
+                "tipCount": 151
+              },
+              "url": "http://www.facebook.com/bostonpubliclibrary",
+              "hasMenu": true,
+              "like": false,
+              "venueRatingBlacklisted": true,
+              "menu": {
+                "type": "Services",
+                "label": "Services",
+                "anchor": "View Services",
+                "url": "https://foursquare.com/v/boston-public-library/4a6e1954f964a520e6d31fe3/menu",
+                "mobileUrl": "https://foursquare.com/v/4a6e1954f964a520e6d31fe3/device_menu"
+              },
+              "beenHere": {
+                "lastCheckinExpiredAt": 0
+              },
+              "storeId": ""
+            },
+            "checkin": {
+              "id": "50a2cb0c16484923d7aa15f2",
+              "createdAt": 1352846092,
+              "type": "checkin",
+              "visibility": "public",
+              "entities": [
+                
+              ],
+              "shout": "We're in Boston getting ready for our first ever Boston #30under30 event!",
+              "timeZoneOffset": -300
+            }
+          }
+        ]
+      },
+      "checkinPings": "off",
+      "pings": false,
+      "mayorships": {
+        "count": 0,
+        "items": [
+          
+        ]
+      },
+      "checkins": {
+        "count": 17,
+        "items": [
+          {
+            "id": "50a2cb0c16484923d7aa15f2",
+            "createdAt": 1352846092,
+            "type": "checkin",
+            "visibility": "public",
+            "entities": [
+              
+            ],
+            "shout": "We're in Boston getting ready for our first ever Boston #30under30 event!",
+            "timeZoneOffset": -300,
+            "venue": {
+              "id": "4a6e1954f964a520e6d31fe3",
+              "name": "Boston Public Library",
+              "contact": {
+                "phone": "+16175365400",
+                "formattedPhone": "+1 617-536-5400",
+                "twitter": "bplboston"
+              },
+              "location": {
+                "address": "700 Boylston St",
+                "crossStreet": "at Dartmouth St",
+                "lat": 42.34961250720164,
+                "lng": -71.07805377190529,
+                "postalCode": "02116",
+                "cc": "US",
+                "city": "Boston",
+                "state": "MA",
+                "country": "United States",
+                "formattedAddress": [
+                  "700 Boylston St (at Dartmouth St)",
+                  "Boston, MA 02116",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d12f941735",
+                  "name": "Library",
+                  "pluralName": "Libraries",
+                  "shortName": "Library",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/building/library_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "verified": true,
+              "stats": {
+                "checkinsCount": 27742,
+                "usersCount": 15066,
+                "tipCount": 151
+              },
+              "url": "http://www.facebook.com/bostonpubliclibrary",
+              "hasMenu": true,
+              "like": false,
+              "venueRatingBlacklisted": true,
+              "menu": {
+                "type": "Services",
+                "label": "Services",
+                "anchor": "View Services",
+                "url": "https://foursquare.com/v/boston-public-library/4a6e1954f964a520e6d31fe3/menu",
+                "mobileUrl": "https://foursquare.com/v/4a6e1954f964a520e6d31fe3/device_menu"
+              },
+              "beenHere": {
+                "lastCheckinExpiredAt": 0
+              },
+              "storeId": ""
+            },
+            "likes": {
+              "count": 368,
+              "groups": [
+                {
+                  "type": "others",
+                  "count": 368,
+                  "items": [
+                    
+                  ]
+                }
+              ],
+              "summary": "368 Likes"
+            },
+            "like": false,
+            "isMayor": false,
+            "photos": {
+              "count": 1,
+              "items": [
+                {
+                  "id": "50a2cb0c16484923d7aa1600",
+                  "createdAt": 1352846092,
+                  "source": {
+                    "name": "Foursquare Web",
+                    "url": "https://foursquare.com"
+                  },
+                  "prefix": "https://igx.4sqi.net/img/general/",
+                  "suffix": "/203469_ADfzJ05vCRDWlKE0Ny12fKB8aVzpECUJK-lZGr5apkM.jpg",
+                  "width": 1944,
+                  "height": 2592,
+                  "user": {
+                    "id": "203469",
+                    "firstName": "ZAGAT",
+                    "gender": "none",
+                    "photo": {
+                      "prefix": "https://igx.4sqi.net/img/user/",
+                      "suffix": "/HJPRUD2NFJVZKZ01.png"
+                    },
+                    "type": "page"
+                  },
+                  "visibility": "public"
+                }
+              ],
+              "layout": {
+                "name": "single"
+              }
+            },
+            "source": {
+              "name": "Foursquare Web",
+              "url": "https://foursquare.com"
+            }
+          }
+        ]
+      },
+      "lists": {
+        "count": 3,
+        "groups": [
+          {
+            "type": "created",
+            "count": 1,
+            "items": [
+              {
+                "id": "4e56944ad22dd2065dc971ca",
+                "name": "8 Best Mexican Restaurants In New York",
+                "description": "It’s time to take a look at the city’s top Mexican restaurants.There are plenty of places where you can score some choice guac and chips along with an ice-cold marg (with salt, natch).",
+                "editable": false,
+                "public": true,
+                "collaborative": false,
+                "url": "/zagat/list/8-best-mexican-restaurants-in-new-york",
+                "canonicalUrl": "https://foursquare.com/zagat/list/8-best-mexican-restaurants-in-new-york",
+                "createdAt": 1314296906,
+                "updatedAt": 1314297099,
+                "photo": {
+                  "id": "4daf120640a3fc7c1000b32d",
+                  "createdAt": 1303319046,
+                  "prefix": "https://igx.4sqi.net/img/general/",
+                  "suffix": "/RCDHGABMUJ3QR0WRMDMR4QOGKHWXZRMF1S01G5TIHMLKO52J.jpg",
+                  "width": 537,
+                  "height": 720,
+                  "user": {
+                    "id": "1066163",
+                    "firstName": "Peter",
+                    "lastName": "P.",
+                    "gender": "male",
+                    "photo": {
+                      "prefix": "https://igx.4sqi.net/img/user/",
+                      "suffix": "/YDFOCO3CCHN1XWSI.jpg"
+                    }
+                  },
+                  "visibility": "public"
+                },
+                "logView": true,
+                "followers": {
+                  "count": 2915
+                },
+                "listItems": {
+                  "count": 7
+                }
+              }
+            ]
+          },
+          {
+            "type": "followed",
+            "count": 0,
+            "items": [
+              
+            ]
+          },
+          {
+            "type": "yours",
+            "count": 2,
+            "items": [
+              {
+                "id": "203469/todos",
+                "name": "ZAGAT's Saved Places",
+                "description": "",
+                "type": "todos",
+                "editable": false,
+                "public": true,
+                "collaborative": false,
+                "url": "/zagat/list/todos",
+                "canonicalUrl": "https://foursquare.com/zagat/list/todos",
+                "logView": true,
+                "listItems": {
+                  "count": 1
+                }
+              },
+              {
+                "id": "203469/venuelikes",
+                "name": "ZAGAT’s Liked Places",
+                "description": "",
+                "type": "likes",
+                "editable": false,
+                "public": true,
+                "collaborative": false,
+                "url": "/zagat/list/venuelikes",
+                "canonicalUrl": "https://foursquare.com/zagat/list/venuelikes",
+                "logView": true,
+                "listItems": {
+                  "count": 0
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "pageInfo": {
+        "description": "We're excited to bring the enthusiastic Foursquare community together with ZAGAT's dining expertise. Now Foursquare users can benefit from official ZAGAT tips.",
+        "banner": "https://is1.4sqi.net/userpix/0AVVSX2TJ4C1VTRE.png",
+        "links": {
+          "count": 1,
+          "items": [
+            {
+              "url": "http://www.zagat.com"
+            }
+          ]
+        }
+      },
+      "blockedStatus": "none",
+      "lenses": [
+        
+      ]
+    }
+  }
+}

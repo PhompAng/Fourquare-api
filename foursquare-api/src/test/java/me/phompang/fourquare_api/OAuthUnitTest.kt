@@ -6,7 +6,6 @@ import org.apache.commons.io.IOUtils
 import org.junit.Assert.assertEquals
 import org.junit.BeforeClass
 import org.junit.Test
-import retrofit2.HttpException
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.moshi.MoshiConverterFactory
@@ -40,11 +39,11 @@ class OAuthUnitTest {
         val response: MockResponse = MockResponse().setResponseCode(200).setBody(json)
         server.enqueue(response)
 
-        foursquareApi!!.authenticateCode("code")
+        foursquareApi!!.authenticateCode("code", server.url("/").toString())
         assertEquals("FAKE_TOKEN", foursquareApi!!.accessToken)
     }
 
-    @Test(expected = HttpException::class)
+    @Test()
     fun testFailAuthenticateCode() {
         val response: MockResponse = MockResponse().setResponseCode(500)
         server.enqueue(response)

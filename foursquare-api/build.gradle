@@ -7,7 +7,7 @@ dependencies {
     compile "com.squareup.retrofit2:retrofit:2.3.0"
     compile "com.squareup.retrofit2:converter-moshi:2.3.0"
     compile "com.squareup.retrofit2:adapter-rxjava2:2.3.0"
-    compile "io.reactivex.rxjava2:rxjava:2.1.0"
+    compile "io.reactivex.rxjava2:rxkotlin:2.0.3"
     compile "org.testng:testng:6.10"
     compile "commons-io:commons-io:2.5"
     testCompile "com.squareup.okhttp3:mockwebserver:3.8.0"

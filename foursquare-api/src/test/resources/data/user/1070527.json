@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "code": 200,
+    "requestId": "5925acd7351e3d47b9d466ac"
+  },
+  "notifications": [
+    {
+      "type": "notificationTray",
+      "item": {
+        "unreadCount": 4
+      }
+    }
+  ],
+  "response": {
+    "user": {
+      "id": "1070527",
+      "firstName": "Starbucks",
+      "gender": "none",
+      "canonicalUrl": "https://foursquare.com/starbucks",
+      "photo": {
+        "prefix": "https://igx.4sqi.net/img/user/",
+        "suffix": "/PM3ZCXLZIG3WZHVC.png"
+      },
+      "friends": {
+        "count": 0,
+        "groups": [
+          {
+            "type": "friends",
+            "name": "Mutual friends",
+            "count": 0,
+            "items": [
+              
+            ]
+          },
+          {
+            "type": "others",
+            "name": "Other friends",
+            "count": 0,
+            "items": [
+              
+            ]
+          }
+        ]
+      },
+      "type": "chain",
+      "tips": {
+        "count": 48
+      },
+      "homeCity": "Seattle, WA",
+      "bio": "Follow Starbucks on Foursquare to check in and earn great badges. Visit enough stores to become the envy of your friends with the Barista Badge.",
+      "contact": {
+        "twitter": "starbucks",
+        "facebook": "22092443056"
+      },
+      "photos": {
+        "count": 284,
+        "items": [
+          {
+            "id": "53d7a923498e0e8456e351ea",
+            "createdAt": 1406642467,
+            "source": {
+              "name": "Foursquare Web",
+              "url": "https://foursquare.com"
+            },
+            "prefix": "https://igx.4sqi.net/img/general/",
+            "suffix": "/1070527_dcnfYoWkXSB-aQNe6UPuUaLEa8j8RDMrTU7ePtBcMfo.jpg",
+            "width": 1536,
+            "height": 1536,
+            "visibility": "public"
+          }
+        ]
+      },
+      "checkinPings": "off",
+      "pings": false,
+      "mayorships": {
+        "count": 0,
+        "items": [
+          
+        ]
+      },
+      "checkins": {
+        "count": 0,
+        "items": [
+          
+        ]
+      },
+      "lists": {
+        "count": 2,
+        "groups": [
+          {
+            "type": "created",
+            "count": 0,
+            "items": [
+              
+            ]
+          },
+          {
+            "type": "followed",
+            "count": 0,
+            "items": [
+              
+            ]
+          },
+          {
+            "type": "yours",
+            "count": 2,
+            "items": [
+              {
+                "id": "1070527/todos",
+                "name": "Starbucks's Saved Places",
+                "description": "",
+                "type": "todos",
+                "editable": false,
+                "public": true,
+                "collaborative": false,
+                "url": "/starbucks/list/todos",
+                "canonicalUrl": "https://foursquare.com/starbucks/list/todos",
+                "logView": true,
+                "listItems": {
+                  "count": 1
+                }
+              },
+              {
+                "id": "1070527/venuelikes",
+                "name": "Starbucks’s Liked Places",
+                "description": "",
+                "type": "likes",
+                "editable": false,
+                "public": true,
+                "collaborative": false,
+                "url": "/starbucks/list/venuelikes",
+                "canonicalUrl": "https://foursquare.com/starbucks/list/venuelikes",
+                "logView": true,
+                "listItems": {
+                  "count": 0
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "pageInfo": {
+        "description": "Follow Starbucks on Foursquare to check in and earn great badges. Visit enough stores to become the envy of your friends with the Barista Badge.",
+        "banner": "https://is1.4sqi.net/userpix/EEKNV3AQRAQ4IV3G.png",
+        "links": {
+          "count": 1,
+          "items": [
+            {
+              "url": "http://www.starbucks.com/"
+            }
+          ]
+        }
+      },
+      "blockedStatus": "none",
+      "lenses": [
+        
+      ]
+    }
+  }
+}
