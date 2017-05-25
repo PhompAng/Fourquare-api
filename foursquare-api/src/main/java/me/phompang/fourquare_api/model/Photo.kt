@@ -9,6 +9,11 @@ data class Photo(val id: String,
                  val createdAt: Long,
                  val prefix: String,
                  val suffix: String,
+                 val width: Integer,
+                 val height: Integer,
                  val visibility: String,
                  val source: Source,
                  val user: CompactUser)
+//TODO venue
+//TODO tip
+//TODO checkin
