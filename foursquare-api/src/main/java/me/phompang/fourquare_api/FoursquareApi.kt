@@ -1,5 +1,6 @@
 package me.phompang.fourquare_api
 
+import com.squareup.moshi.Types
 import io.reactivex.Observable
 import io.reactivex.rxkotlin.blockingSubscribeBy
 import io.reactivex.schedulers.Schedulers
@@ -8,6 +9,9 @@ import me.phompang.fourquare_api.api.User
 import me.phompang.fourquare_api.model.Result
 import me.phompang.fourquare_api.model.user.CompleteUser
 import me.phompang.fourquare_api.model.user.UserResult
+import okhttp3.ResponseBody
+import retrofit2.Converter
+import retrofit2.HttpException
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.moshi.MoshiConverterFactory
@@ -45,7 +49,12 @@ class FoursquareApi(val clientId: String,
 
         return user.getUser(userId, accessToken)
                 .map {
-                    t: Result<UserResult<CompleteUser>>? -> Result(t!!.response.user)
+                    t: Result<UserResult<CompleteUser>>? -> Result(t!!.response.user, t.meta)
+                }
+                .onErrorReturn {
+                    t: Throwable? ->
+                    val converter: Converter<ResponseBody, Result<CompleteUser>> = retrofit.responseBodyConverter(Types.newParameterizedType(Result::class.java, CompleteUser::class.java), Result::class.java.annotations)
+                    converter.convert((t as HttpException).response().errorBody())
                 }
     }
 }

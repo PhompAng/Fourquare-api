@@ -47,6 +47,9 @@ class UserUnitTest {
         observer.assertComplete()
                 .assertNoErrors()
                 .assertValue {
+                    t: Result<CompleteUser>? -> t!!.meta.code.toInt() == 200
+                }
+                .assertValue {
                     t: Result<CompleteUser>? -> t!!.response.id == "1709482"
                 }
                 .assertValue {
@@ -71,10 +74,13 @@ class UserUnitTest {
 
         val observer: TestObserver<Result<CompleteUser>> = TestObserver()
 
-        foursquareApi!!.getUser("self").subscribe(observer)
+        foursquareApi!!.getUser("134748312").subscribe(observer)
         observer.awaitTerminalEvent()
         observer.assertComplete()
                 .assertNoErrors()
+                .assertValue {
+                    t: Result<CompleteUser>? -> t!!.meta.code.toInt() == 200
+                }
                 .assertValue {
                     t: Result<CompleteUser>? -> t!!.response.id == "134748312"
                 }
@@ -100,10 +106,13 @@ class UserUnitTest {
 
         val observer: TestObserver<Result<CompleteUser>> = TestObserver()
 
-        foursquareApi!!.getUser("self").subscribe(observer)
+        foursquareApi!!.getUser("203469").subscribe(observer)
         observer.awaitTerminalEvent()
         observer.assertComplete()
                 .assertNoErrors()
+                .assertValue {
+                    t: Result<CompleteUser>? -> t!!.meta.code.toInt() == 200
+                }
                 .assertValue {
                     t: Result<CompleteUser>? -> t!!.response.id == "203469"
                 }
@@ -132,10 +141,13 @@ class UserUnitTest {
 
         val observer: TestObserver<Result<CompleteUser>> = TestObserver()
 
-        foursquareApi!!.getUser("self").subscribe(observer)
+        foursquareApi!!.getUser("1070527").subscribe(observer)
         observer.awaitTerminalEvent()
         observer.assertComplete()
                 .assertNoErrors()
+                .assertValue {
+                    t: Result<CompleteUser>? -> t!!.meta.code.toInt() == 200
+                }
                 .assertValue {
                     t: Result<CompleteUser>? -> t!!.response.id == "1070527"
                 }
@@ -154,5 +166,31 @@ class UserUnitTest {
                 .assertValue {
                     t: Result<CompleteUser>? -> t!!.response.type == "chain"
                 }
+    }
+
+    @Test
+    fun testUserParamError() {
+        val json: String = IOUtils.toString(javaClass.classLoader.getResourceAsStream("data/user/param_error.json"), Charset.defaultCharset())
+        val response: MockResponse = MockResponse().setResponseCode(400).setBody(json)
+        server.enqueue(response)
+
+        val observer: TestObserver<Result<CompleteUser>> = TestObserver()
+
+        foursquareApi!!.getUser("0").subscribe(observer)
+        observer.awaitTerminalEvent()
+        observer
+                .assertValue {
+                    t: Result<CompleteUser>? -> t!!.meta.code.toInt() == 400
+                }
+                .assertValue {
+                    t: Result<CompleteUser>? -> t!!.meta.errorType == "param_error"
+                }
+                .assertValue {
+                    t: Result<CompleteUser>? -> t!!.meta.errorDetail == "Must provide a valid user ID or 'self.'"
+                }
+                .assertValue {
+                    t: Result<CompleteUser>? -> t!!.response.id == null
+                }
+
     }
 }
