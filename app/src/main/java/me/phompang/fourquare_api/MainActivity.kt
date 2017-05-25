@@ -6,10 +6,14 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.widget.Toast
+import com.squareup.moshi.Moshi
+import com.squareup.moshi.Types
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.rxkotlin.subscribeBy
 import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_main.*
+import me.phompang.fourquare_api.model.Result
+import me.phompang.fourquare_api.model.user.CompleteUser
 
 class MainActivity : AppCompatActivity() {
 
@@ -39,7 +43,8 @@ class MainActivity : AppCompatActivity() {
                     .observeOn(AndroidSchedulers.mainThread())
                     .subscribeBy(
                             onNext = {
-                                println(it)
+                                val type = Types.newParameterizedType(Result::class.java, CompleteUser::class.java)
+                                longLog(Moshi.Builder().build().adapter<Result<CompleteUser>>(type).toJson(it))
                                 code.text = it.toString()
                             },
                             onError = {
@@ -59,5 +64,13 @@ class MainActivity : AppCompatActivity() {
                 code.text = foursquareApi.accessToken
             }
         }
+    }
+
+    fun longLog(str: String) {
+        if (str.length > 1000) {
+            Log.d("user", str.substring(0, 1000))
+            longLog(str.substring(1000))
+        } else
+            Log.d("user", str)
     }
 }

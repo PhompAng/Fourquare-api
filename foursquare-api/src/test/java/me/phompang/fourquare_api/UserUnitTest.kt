@@ -131,6 +131,9 @@ class UserUnitTest {
                 .assertValue {
                     t: Result<CompleteUser>? -> t!!.response.type == "page"
                 }
+                .assertValue {
+                    t: Result<CompleteUser>? -> t!!.response.pageInfo.links.items[0].url == "http://www.zagat.com"
+                }
     }
 
     @Test
@@ -165,6 +168,9 @@ class UserUnitTest {
                 }
                 .assertValue {
                     t: Result<CompleteUser>? -> t!!.response.type == "chain"
+                }
+                .assertValue {
+                    t: Result<CompleteUser>? -> t!!.response.pageInfo.links.items[0].url == "http://www.starbucks.com/"
                 }
     }
 
