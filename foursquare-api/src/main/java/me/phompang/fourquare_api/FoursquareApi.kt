@@ -9,6 +9,7 @@ import me.phompang.fourquare_api.api.User
 import me.phompang.fourquare_api.model.Result
 import me.phompang.fourquare_api.model.user.CompleteUser
 import me.phompang.fourquare_api.model.user.UserResult
+import me.phompang.fourquare_api.model.user.UserSearchResult
 import okhttp3.ResponseBody
 import retrofit2.Converter
 import retrofit2.HttpException
@@ -45,15 +46,32 @@ class FoursquareApi(val clientId: String,
     }
 
     fun getUser(userId: String): Observable<Result<CompleteUser>> {
-        val user: User = retrofit.create(User::class.java)
+        val userApi: User = retrofit.create(User::class.java)
 
-        return user.getUser(userId, accessToken)
+        return userApi.getUser(userId, accessToken)
                 .map {
                     t: Result<UserResult<CompleteUser>>? -> Result(t!!.response.user, t.meta)
                 }
                 .onErrorReturn {
                     t: Throwable? ->
                     val converter: Converter<ResponseBody, Result<CompleteUser>> = retrofit.responseBodyConverter(Types.newParameterizedType(Result::class.java, CompleteUser::class.java), Result::class.java.annotations)
+                    converter.convert((t as HttpException).response().errorBody())
+                }
+    }
+
+    fun searchUser(phone: String? = null,
+                   email: String? = null,
+                   twitter: String? = null,
+                   twitterSource: String? = null,
+                   fbid: String? = null,
+                   name: String? = null,
+                   onlyPages: Boolean = false): Observable<Result<UserSearchResult>> {
+        val userApi: User = retrofit.create(User::class.java)
+
+        return userApi.searchUser(phone, email, twitter, twitterSource, fbid, name, onlyPages, accessToken)
+                .onErrorReturn {
+                    t: Throwable? ->
+                    val converter: Converter<ResponseBody, Result<UserSearchResult>> = retrofit.responseBodyConverter(Types.newParameterizedType(Result::class.java, UserSearchResult::class.java), Result::class.java.annotations)
                     converter.convert((t as HttpException).response().errorBody())
                 }
     }

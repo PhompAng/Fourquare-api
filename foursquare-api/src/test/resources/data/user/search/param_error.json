@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "code": 400,
+    "errorType": "param_error",
+    "errorDetail": "Must specify one of phone, fbid, fbSource, twitter, twitterSource, userIds, email, name, bbmId, any.",
+    "requestId": "5928320b351e3d47bb13fce3"
+  },
+  "notifications": [
+    {
+      "type": "notificationTray",
+      "item": {
+        "unreadCount": 4
+      }
+    }
+  ],
+  "response": {
+    
+  }
+}

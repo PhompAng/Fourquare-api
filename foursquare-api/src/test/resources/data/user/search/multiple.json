@@ -1,0 +1,261 @@
+{
+  "meta": {
+    "code": 200,
+    "requestId": "5928382edd57970daa5660ed"
+  },
+  "notifications": [
+    {
+      "type": "notificationTray",
+      "item": {
+        "unreadCount": 4
+      }
+    }
+  ],
+  "response": {
+    "results": [
+      {
+        "id": "42625708",
+        "firstName": "Generito",
+        "gender": "none",
+        "photo": {
+          "prefix": "https://igx.4sqi.net/img/user/",
+          "suffix": "/WL3UNVDCUYZNNXSD.jpg"
+        },
+        "type": "page",
+        "tips": {
+          "count": 0
+        },
+        "lists": {
+          "groups": [
+            {
+              "type": "created",
+              "count": 3,
+              "items": [
+                
+              ]
+            }
+          ]
+        },
+        "homeCity": "Mandaluyong, Philippines",
+        "bio": "",
+        "contact": {
+          "twitter": "generito"
+        }
+      },
+      {
+        "id": "47123170",
+        "firstName": "ABC Store",
+        "gender": "none",
+        "photo": {
+          "prefix": "https://igx.4sqi.net/img/user/",
+          "suffix": "/ZURRTL1WGQZVW41Z.jpg"
+        },
+        "type": "page",
+        "tips": {
+          "count": 0
+        },
+        "lists": {
+          "groups": [
+            {
+              "type": "created",
+              "count": 2,
+              "items": [
+                
+              ]
+            }
+          ]
+        },
+        "homeCity": "Pune",
+        "bio": "",
+        "contact": {
+          "twitter": "lucky_sangolkar"
+        }
+      },
+      {
+        "id": "76169168",
+        "firstName": "Leib_KR",
+        "gender": "none",
+        "photo": {
+          "prefix": "https://igx.4sqi.net/img/user/",
+          "suffix": "/76169168-FVR4GSK1LS2DX1H3.png"
+        },
+        "type": "page",
+        "tips": {
+          "count": 0
+        },
+        "lists": {
+          "groups": [
+            {
+              "type": "created",
+              "count": 3,
+              "items": [
+                
+              ]
+            }
+          ]
+        },
+        "homeCity": "Hamburg, HH",
+        "bio": "",
+        "contact": {
+          "twitter": "leib_kr"
+        }
+      },
+      {
+        "id": "73645135",
+        "firstName": "Mjalti Kapshtica",
+        "gender": "none",
+        "photo": {
+          "prefix": "https://igx.4sqi.net/img/user/",
+          "suffix": "/73645135-OKJUFJEM3JYGRUZW.jpg"
+        },
+        "type": "page",
+        "tips": {
+          "count": 0
+        },
+        "lists": {
+          "groups": [
+            {
+              "type": "created",
+              "count": 3,
+              "items": [
+                
+              ]
+            }
+          ]
+        },
+        "homeCity": "Kapshtica ",
+        "bio": "",
+        "contact": {
+          "twitter": "mjaltikapshtica",
+          "facebook": "225891274129119"
+        }
+      },
+      {
+        "id": "67081923",
+        "firstName": "4squaretest",
+        "gender": "none",
+        "photo": {
+          "prefix": "https://igx.4sqi.net/img/user/",
+          "suffix": "/blank_boy.png",
+          "default": true
+        },
+        "type": "page",
+        "tips": {
+          "count": 0
+        },
+        "lists": {
+          "groups": [
+            {
+              "type": "created",
+              "count": 2,
+              "items": [
+                
+              ]
+            }
+          ]
+        },
+        "homeCity": "Zürich",
+        "bio": "",
+        "contact": {
+          "twitter": "4squaretest"
+        }
+      },
+      {
+        "id": "14758364",
+        "firstName": "prueba1234",
+        "gender": "none",
+        "photo": {
+          "prefix": "https://igx.4sqi.net/img/user/",
+          "suffix": "/K3FGBQ1CTT1NKBWM.jpg"
+        },
+        "type": "page",
+        "tips": {
+          "count": 0
+        },
+        "lists": {
+          "groups": [
+            {
+              "type": "created",
+              "count": 2,
+              "items": [
+                
+              ]
+            }
+          ]
+        },
+        "homeCity": "Santiago, Región Metropolitana",
+        "bio": "",
+        "contact": {
+          "twitter": "prueba12341"
+        }
+      },
+      {
+        "id": "13210008",
+        "firstName": "INKblog",
+        "gender": "none",
+        "photo": {
+          "prefix": "https://igx.4sqi.net/img/user/",
+          "suffix": "/XQ01JCSVXFOQI5IB.png"
+        },
+        "type": "page",
+        "tips": {
+          "count": 0
+        },
+        "lists": {
+          "groups": [
+            {
+              "type": "created",
+              "count": 3,
+              "items": [
+                
+              ]
+            }
+          ]
+        },
+        "homeCity": "Perugia, Italia",
+        "bio": "",
+        "contact": {
+          "twitter": "inknews"
+        }
+      },
+      {
+        "id": "20843249",
+        "firstName": "Matilde Pelkonen",
+        "gender": "none",
+        "photo": {
+          "prefix": "https://igx.4sqi.net/img/user/",
+          "suffix": "/1VDGMFKNKRNVSNO5.jpg"
+        },
+        "type": "page",
+        "tips": {
+          "count": 0
+        },
+        "lists": {
+          "groups": [
+            {
+              "type": "created",
+              "count": 2,
+              "items": [
+                
+              ]
+            }
+          ]
+        },
+        "homeCity": "Helsinki, Suomi",
+        "bio": "",
+        "contact": {
+          
+        }
+      }
+    ],
+    "unmatched": {
+      "fbid": [
+        999999,
+        1234
+      ],
+      "name": [
+        
+      ]
+    }
+  }
+}

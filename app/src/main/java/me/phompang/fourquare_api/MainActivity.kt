@@ -13,7 +13,7 @@ import io.reactivex.rxkotlin.subscribeBy
 import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_main.*
 import me.phompang.fourquare_api.model.Result
-import me.phompang.fourquare_api.model.user.CompleteUser
+import me.phompang.fourquare_api.model.user.UserSearchResult
 
 class MainActivity : AppCompatActivity() {
 
@@ -38,13 +38,13 @@ class MainActivity : AppCompatActivity() {
         }
 
         user.setOnClickListener {
-            foursquareApi.getUser("self")
+            foursquareApi.searchUser(phone = "1234")
                     .subscribeOn(Schedulers.newThread())
                     .observeOn(AndroidSchedulers.mainThread())
                     .subscribeBy(
                             onNext = {
-                                val type = Types.newParameterizedType(Result::class.java, CompleteUser::class.java)
-                                longLog(Moshi.Builder().build().adapter<Result<CompleteUser>>(type).toJson(it))
+                                val type = Types.newParameterizedType(Result::class.java, UserSearchResult::class.java)
+                                longLog(Moshi.Builder().build().adapter<Result<UserSearchResult>>(type).toJson(it))
                                 code.text = it.toString()
                             },
                             onError = {

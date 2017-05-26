@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "code": 200,
+    "requestId": "5926fa156a607128039bbe83"
+  },
+  "notifications": [
+    {
+      "type": "notificationTray",
+      "item": {
+        "unreadCount": 4
+      }
+    }
+  ],
+  "response": {
+    "results": [
+      {
+        "id": "22298413",
+        "firstName": "Manatsanan",
+        "lastName": "Aungkum",
+        "gender": "female",
+        "photo": {
+          "prefix": "https://igx.4sqi.net/img/user/",
+          "suffix": "/blank_girl.png",
+          "default": true
+        },
+        "tips": {
+          "count": 0
+        },
+        "lists": {
+          "groups": [
+            {
+              "type": "created",
+              "count": 2,
+              "items": [
+                
+              ]
+            }
+          ]
+        },
+        "homeCity": "Bangkok Metropolis",
+        "bio": "",
+        "contact": {
+          "contactBookPhone": "1234"
+        }
+      },
+      {
+        "id": "15473902",
+        "firstName": "Juliet",
+        "lastName": "Krantweiss",
+        "gender": "female",
+        "photo": {
+          "prefix": "https://igx.4sqi.net/img/user/",
+          "suffix": "/blank_girl.png",
+          "default": true
+        },
+        "tips": {
+          "count": 0
+        },
+        "lists": {
+          "groups": [
+            {
+              "type": "created",
+              "count": 2,
+              "items": [
+                
+              ]
+            }
+          ]
+        },
+        "homeCity": "New York, NY",
+        "bio": "",
+        "contact": {
+          "contactBookPhone": "1234"
+        }
+      }
+    ],
+    "unmatched": {
+      "phone": [
+        
+      ]
+    }
+  }
+}
