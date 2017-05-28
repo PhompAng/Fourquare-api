@@ -5,6 +5,7 @@ import me.phompang.fourquare_api.model.Result
 import me.phompang.fourquare_api.model.user.CompleteUser
 import me.phompang.fourquare_api.model.user.UserResult
 import me.phompang.fourquare_api.model.user.UserSearchResult
+import me.phompang.fourquare_api.model.user.UsersRequestsResult
 import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query
@@ -26,4 +27,8 @@ interface User {
                    @Query("name") name: String?,
                    @Query("onlyPages") onlyPages: Boolean = false,
                    @Query("oauth_token") oauth_token: String): Observable<Result<UserSearchResult>>
+
+    @GET("users/requests?v=20170523")
+    fun usersRequests(@Query("oauth_token") oauth_token: String): Observable<Result<UsersRequestsResult>>
+
 }

@@ -7,9 +7,7 @@ import io.reactivex.schedulers.Schedulers
 import me.phompang.fourquare_api.api.OAuth
 import me.phompang.fourquare_api.api.User
 import me.phompang.fourquare_api.model.Result
-import me.phompang.fourquare_api.model.user.CompleteUser
-import me.phompang.fourquare_api.model.user.UserResult
-import me.phompang.fourquare_api.model.user.UserSearchResult
+import me.phompang.fourquare_api.model.user.*
 import okhttp3.ResponseBody
 import retrofit2.Converter
 import retrofit2.HttpException
@@ -72,6 +70,20 @@ class FoursquareApi(val clientId: String,
                 .onErrorReturn {
                     t: Throwable? ->
                     val converter: Converter<ResponseBody, Result<UserSearchResult>> = retrofit.responseBodyConverter(Types.newParameterizedType(Result::class.java, UserSearchResult::class.java), Result::class.java.annotations)
+                    converter.convert((t as HttpException).response().errorBody())
+                }
+    }
+
+    fun usersRequests(): Observable<Result<List<CompactUser>>> {
+        val userApi: User = retrofit.create(User::class.java)
+
+        return userApi.usersRequests(accessToken)
+                .map {
+                    t: Result<UsersRequestsResult>? -> Result(t!!.response.requests, t.meta)
+                }
+                .onErrorReturn {
+                    t: Throwable? ->
+                    val converter: Converter<ResponseBody, Result<List<CompactUser>>> = retrofit.responseBodyConverter(Types.newParameterizedType(Result::class.java, List::class.java, CompactUser::class.java), Result::class.java.annotations)
                     converter.convert((t as HttpException).response().errorBody())
                 }
     }
