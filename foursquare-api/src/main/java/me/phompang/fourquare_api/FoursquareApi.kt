@@ -43,12 +43,12 @@ class FoursquareApi(val clientId: String,
                         })
     }
 
-    fun getUser(userId: String): Observable<Result<CompleteUser>> {
+    fun users(userId: String): Observable<Result<CompleteUser>> {
         val userApi: User = retrofit.create(User::class.java)
 
-        return userApi.getUser(userId, accessToken)
+        return userApi.users(userId, accessToken)
                 .map {
-                    t: Result<UserResult<CompleteUser>>? -> Result(t!!.response.user, t.meta)
+                    t: Result<UsersResult<CompleteUser>>? -> Result(t!!.response.user, t.meta)
                 }
                 .onErrorReturn {
                     t: Throwable? ->
@@ -57,19 +57,19 @@ class FoursquareApi(val clientId: String,
                 }
     }
 
-    fun searchUser(phone: String? = null,
-                   email: String? = null,
-                   twitter: String? = null,
-                   twitterSource: String? = null,
-                   fbid: String? = null,
-                   name: String? = null,
-                   onlyPages: Boolean = false): Observable<Result<UserSearchResult>> {
+    fun usersSearch(phone: String? = null,
+                    email: String? = null,
+                    twitter: String? = null,
+                    twitterSource: String? = null,
+                    fbid: String? = null,
+                    name: String? = null,
+                    onlyPages: Boolean = false): Observable<Result<UsersSearchResult>> {
         val userApi: User = retrofit.create(User::class.java)
 
-        return userApi.searchUser(phone, email, twitter, twitterSource, fbid, name, onlyPages, accessToken)
+        return userApi.usersSearch(phone, email, twitter, twitterSource, fbid, name, onlyPages, accessToken)
                 .onErrorReturn {
                     t: Throwable? ->
-                    val converter: Converter<ResponseBody, Result<UserSearchResult>> = retrofit.responseBodyConverter(Types.newParameterizedType(Result::class.java, UserSearchResult::class.java), Result::class.java.annotations)
+                    val converter: Converter<ResponseBody, Result<UsersSearchResult>> = retrofit.responseBodyConverter(Types.newParameterizedType(Result::class.java, UsersSearchResult::class.java), Result::class.java.annotations)
                     converter.convert((t as HttpException).response().errorBody())
                 }
     }

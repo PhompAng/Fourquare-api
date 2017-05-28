@@ -42,7 +42,7 @@ class UserUnitTest {
 
         val observer: TestObserver<Result<CompleteUser>> = TestObserver()
 
-        foursquareApi!!.getUser("self").subscribe(observer)
+        foursquareApi!!.users("self").subscribe(observer)
         observer.awaitTerminalEvent()
         observer.assertComplete()
                 .assertNoErrors()
@@ -74,7 +74,7 @@ class UserUnitTest {
 
         val observer: TestObserver<Result<CompleteUser>> = TestObserver()
 
-        foursquareApi!!.getUser("134748312").subscribe(observer)
+        foursquareApi!!.users("134748312").subscribe(observer)
         observer.awaitTerminalEvent()
         observer.assertComplete()
                 .assertNoErrors()
@@ -106,7 +106,7 @@ class UserUnitTest {
 
         val observer: TestObserver<Result<CompleteUser>> = TestObserver()
 
-        foursquareApi!!.getUser("203469").subscribe(observer)
+        foursquareApi!!.users("203469").subscribe(observer)
         observer.awaitTerminalEvent()
         observer.assertComplete()
                 .assertNoErrors()
@@ -144,7 +144,7 @@ class UserUnitTest {
 
         val observer: TestObserver<Result<CompleteUser>> = TestObserver()
 
-        foursquareApi!!.getUser("1070527").subscribe(observer)
+        foursquareApi!!.users("1070527").subscribe(observer)
         observer.awaitTerminalEvent()
         observer.assertComplete()
                 .assertNoErrors()
@@ -182,7 +182,7 @@ class UserUnitTest {
 
         val observer: TestObserver<Result<CompleteUser>> = TestObserver()
 
-        foursquareApi!!.getUser("0").subscribe(observer)
+        foursquareApi!!.users("0").subscribe(observer)
         observer.awaitTerminalEvent()
         observer
                 .assertValue {

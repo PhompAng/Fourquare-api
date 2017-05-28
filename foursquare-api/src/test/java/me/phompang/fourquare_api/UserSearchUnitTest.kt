@@ -2,7 +2,7 @@ package me.phompang.fourquare_api
 
 import io.reactivex.observers.TestObserver
 import me.phompang.fourquare_api.model.Result
-import me.phompang.fourquare_api.model.user.UserSearchResult
+import me.phompang.fourquare_api.model.user.UsersSearchResult
 import okhttp3.mockwebserver.MockResponse
 import okhttp3.mockwebserver.MockWebServer
 import org.apache.commons.io.IOUtils
@@ -40,29 +40,29 @@ class UserSearchUnitTest {
         val response: MockResponse = MockResponse().setResponseCode(200).setBody(json)
         server.enqueue(response)
 
-        val observer: TestObserver<Result<UserSearchResult>> = TestObserver()
+        val observer: TestObserver<Result<UsersSearchResult>> = TestObserver()
 
-        foursquareApi!!.searchUser(phone = "1234").subscribe(observer)
+        foursquareApi!!.usersSearch(phone = "1234").subscribe(observer)
         observer.awaitTerminalEvent()
         observer.assertComplete()
                 .assertNoErrors()
                 .assertValue {
-                    t: Result<UserSearchResult>? -> t!!.meta.code.toInt() == 200
+                    t: Result<UsersSearchResult>? -> t!!.meta.code.toInt() == 200
                 }
                 .assertValue {
-                    t: Result<UserSearchResult>? -> t!!.response.results.size == 2
+                    t: Result<UsersSearchResult>? -> t!!.response.results.size == 2
                 }
                 .assertValue {
-                    t: Result<UserSearchResult>? -> t!!.response.results[0].id == "22298413"
+                    t: Result<UsersSearchResult>? -> t!!.response.results[0].id == "22298413"
                 }
                 .assertValue { 
-                    t: Result<UserSearchResult>? -> t!!.response.results[0].firstName == "Manatsanan" 
+                    t: Result<UsersSearchResult>? -> t!!.response.results[0].firstName == "Manatsanan"
                 }
                 .assertValue { 
-                    t: Result<UserSearchResult>? -> t!!.response.results[0].homeCity == "Bangkok Metropolis"
+                    t: Result<UsersSearchResult>? -> t!!.response.results[0].homeCity == "Bangkok Metropolis"
                 }
                 .assertValue {
-                    t: Result<UserSearchResult>? -> t!!.response.unmatched.phone.size == 0
+                    t: Result<UsersSearchResult>? -> t!!.response.unmatched.phone.size == 0
                 }
     }
 
@@ -72,26 +72,26 @@ class UserSearchUnitTest {
         val response: MockResponse = MockResponse().setResponseCode(200).setBody(json)
         server.enqueue(response)
 
-        val observer: TestObserver<Result<UserSearchResult>> = TestObserver()
+        val observer: TestObserver<Result<UsersSearchResult>> = TestObserver()
 
-        foursquareApi!!.searchUser(name="lorem", fbid="999999,1234", onlyPages=true).subscribe(observer)
+        foursquareApi!!.usersSearch(name="lorem", fbid="999999,1234", onlyPages=true).subscribe(observer)
         observer.awaitTerminalEvent()
         observer.assertComplete()
                 .assertNoErrors()
                 .assertValue {
-                    t: Result<UserSearchResult>? -> t!!.meta.code.toInt() == 200
+                    t: Result<UsersSearchResult>? -> t!!.meta.code.toInt() == 200
                 }
                 .assertValue {
-                    t: Result<UserSearchResult>? -> t!!.response.results.size == 8
+                    t: Result<UsersSearchResult>? -> t!!.response.results.size == 8
                 }
                 .assertValue {
-                    t: Result<UserSearchResult>? -> t!!.response.results[0].id == "42625708"
+                    t: Result<UsersSearchResult>? -> t!!.response.results[0].id == "42625708"
                 }
                 .assertValue {
-                    t: Result<UserSearchResult>? -> t!!.response.results[0].firstName == "Generito"
+                    t: Result<UsersSearchResult>? -> t!!.response.results[0].firstName == "Generito"
                 }
                 .assertValue {
-                    t: Result<UserSearchResult>? -> t!!.response.unmatched.fbid.size == 2
+                    t: Result<UsersSearchResult>? -> t!!.response.unmatched.fbid.size == 2
                 }
     }
 
@@ -101,22 +101,22 @@ class UserSearchUnitTest {
         val response: MockResponse = MockResponse().setResponseCode(400).setBody(json)
         server.enqueue(response)
 
-        val observer: TestObserver<Result<UserSearchResult>> = TestObserver()
+        val observer: TestObserver<Result<UsersSearchResult>> = TestObserver()
 
-        foursquareApi!!.searchUser().subscribe(observer)
+        foursquareApi!!.usersSearch().subscribe(observer)
         observer.awaitTerminalEvent()
         observer
                 .assertValue {
-                    t: Result<UserSearchResult>? -> t!!.meta.code.toInt() == 400
+                    t: Result<UsersSearchResult>? -> t!!.meta.code.toInt() == 400
                 }
                 .assertValue {
-                    t: Result<UserSearchResult>? -> t!!.meta.errorType == "param_error"
+                    t: Result<UsersSearchResult>? -> t!!.meta.errorType == "param_error"
                 }
                 .assertValue {
-                    t: Result<UserSearchResult>? -> t!!.meta.errorDetail == "Must specify one of phone, fbid, fbSource, twitter, twitterSource, userIds, email, name, bbmId, any."
+                    t: Result<UsersSearchResult>? -> t!!.meta.errorDetail == "Must specify one of phone, fbid, fbSource, twitter, twitterSource, userIds, email, name, bbmId, any."
                 }
                 .assertValue {
-                    t: Result<UserSearchResult>? -> t!!.response.results == null
+                    t: Result<UsersSearchResult>? -> t!!.response.results == null
                 }
     }
 }
