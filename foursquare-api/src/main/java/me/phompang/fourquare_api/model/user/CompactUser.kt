@@ -1,5 +1,6 @@
 package me.phompang.fourquare_api.model.user
 
+import me.phompang.fourquare_api.model.Contact
 import me.phompang.fourquare_api.model.Count
 import me.phompang.fourquare_api.model.Group
 import me.phompang.fourquare_api.model.Photo

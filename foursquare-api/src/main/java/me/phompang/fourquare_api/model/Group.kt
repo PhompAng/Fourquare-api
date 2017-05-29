@@ -5,6 +5,7 @@ package me.phompang.fourquare_api.model
  */
 data class Group<out T>(val type: String,
                         val name: String,
+                        val summary: String,
                         val count: Integer,
                         val groups: List<Count<T>>)
 
